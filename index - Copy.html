@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Aishwarya Mallampati - Computer Science Portfolio Webpage</title>
+        
+        <!-- Bootstrap css file -->
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+        
+        <!-- font awesome icons -->
+        <link rel="stylesheet" href="./css/all.min.css">
+        
+        <!--custom css file -->
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        
+        <!-- ====================== Start Header Area ============================ -->
+        <header class="header_area">
+            <div class="main-menu">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                  <a class="navbar-brand" href="#">Aishwarya Mallampati</a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="mr-auto"></div>  
+                    <ul class="navbar-nav">
+                      <li class="nav-item active">
+                        <a class="nav-link" href="#">HOME<span class="sr-only">(current)</span></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">ABOUT</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">PROJECTS</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">PAGES</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">BLOG</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">CONTACT</a>
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+            </div>
+        </header>
+        <!-- ====================== End Header Area ============================ -->
+        
+        <!-- ====================== Start Main Area ============================ -->
+        <main class="site-main">
+            
+            <aside id="colorlib-aside" role="complementary" class="border js-fullheight">
+               <div class="text-center">
+                  <div class="author-img" style="background-image: url(images/IMG_-wl1xai.jpg);"></div>
+                  <h1 id="colorlib-logo"><a href="https://vinaysomawat.github.io">Vinay Somawat</a></h1>
+               </div>
+               <nav id="colorlib-main-menu" role="navigation" class="navbar">
+                  <div id="navbar" class="collapse">
+                     <ul>
+                        <li><a href="#" data-nav-section="about">About</a></li>
+                        <li><a href="#" data-nav-section="skills">Skills</a></li>
+                        <li><a href="#" data-nav-section="experience">Work Experience</a></li>
+                        <li><a href="#" data-nav-section="contact">Contact</a></li>
+                     </ul>
+                  </div>
+               </nav>
+            </aside>
+            
+            <!-- ====================== Start Banner Area ============================ -->
+            <section class="site-banner">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12 site-title">
+                            <h3 class="title-text">Hey</h3>
+                            <h1 class="title-text text-uppercase">I am Aishwarya</h1>
+                            <h4 class="title-text text-uppercase">Software Developer</h4>
+                            <div class="site-buttons">
+                                <div class="d-flex flex-row flex-wrap">
+                                    <button type="button" class="btn button primary-button mr-4 text-uppercase">hire me</button>
+                                    <button type="button" class="btn button secondary-button text-uppercase">Get cv</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12 banner-img">
+                            <img src="./img/banner/ProfilePicture.jpg" alt="banner-img" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ====================== End Banner Area ============================ -->
+            
+            <!-- ====================== Projects Area ============================ -->
+            <section class="projects-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 text-center projects-title">
+                            <h1 class="text-uppercase title-text">Projects</h1>
+                        </div>
+                    </div>
+                    
+                    <!-- ====================== Project Detail Dialog Box ======================= -->
+                    <div id="white-background"></div>
+                    <div id="dlgbox">
+                        <div id="dlg-header">
+                            <p id="header">You are logged out.</p>
+                            <button onclick="closeDialog()">Close</button>
+                        </div>
+                        <div id="dlg-body">Kindly log in to continue.</div>
+                        <div id="dlg-footer">
+                            <a id="source-code" href="https://www.wikipedia.org/" target="_blank">SOURCE CODE</a>
+                        </div>
+                    </div>
+                    <!-- ====================== End Project Detail Dialog Box =================== -->
+                    
+                    
+                    <!-- ====================== DIP Projects Area ============================ -->
+                    <div class="container subject-area">
+                        <div class="subject-title pb-5">
+                            <h3 class="text-uppercase title-h3">Digital Image Processing-II</h3>
+                        </div>
+                        <div class="row">
+                            <!--DIP Project1-->
+                            <div class="col-lg-3 col-md-6 col-sm-12">
+                                <div class="project">
+                                    <div class="project-img text-center py-4">
+                                        <img src="./img/Projects/DIP-II/Project1.PNG" alt="DIP Project1" width=100 height=100>
+                                        <div class="card-body text-center">
+                                            <h5 class="card-title text-uppercase font-roboto">
+                                                Mathematical Morphotlogy:Hit-or-Miss Transform
+                                            </h5>
+                                            <button type="button" class="btn button secondary-button text-uppercase" onclick="showDialog('Mathematical Morphotlogy:Hit-or-Miss Transform','https://github.com/aishwaryamallampati/PennState-MS/tree/master/DIP-II/Project1')">Details</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!--DIP Project1-->
+                            <div class="col-lg-3 col-md-6 col-sm-12">
+                                <div class="project">
+                                    <div class="project-img text-center py-4">
+                                        <img src="./img/Projects/DIP-II/Project1.PNG" alt="DIP Project1" width=100 height=100>
+                                        <div class="card-body text-center">
+                                            <h5 class="card-title text-uppercase font-roboto">
+                                                Mathematical Morphotlogy:Hit-or-Miss Transform
+                                            </h5>
+                                            <button type="button" class="btn button secondary-button text-uppercase">Details</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <!-- ====================== End DIP Projects Area ============================ -->
+                </div>
+            </section>
+            
+            <!-- ====================== End Projects Area ============================ -->
+        </main>
+        <!-- ====================== End Main Area ============================ -->
+        
+        <!-- Jquery js file -->
+        <script src="./js/bootstrap.min.js"></script>
+        
+        <!-- Bootstrap js file -->
+        <script src="./js/bootstrap.min.js"></script>
+        
+        <!--  custom js file  -->
+    <script type="text/javascript" src="./js/main.js"></script>
+    </body>
+</html>

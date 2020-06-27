@@ -4,6 +4,83 @@
 /* css variables */ 
 @import url(./partials/_variables.css);
 
+/* import global styling */
+@import url(./partials/_global.css);
+
+.wrapper {
+    display: flex;
+    width: 100%;
+}
+
+/* Start Side Bar */
+#sidebar {
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 999;
+    background: #7386D5;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+#sidebar .sidebar-header {
+    padding: 20px;
+    background: #6d7fcc;
+}
+
+#sidebar.active {
+    margin-left: -250px;
+}
+
+#sidebar ul.components {
+    padding: 20px 0;
+    border-bottom: 1px solid #47748b;
+}
+
+#sidebar ul p {
+    color: #fff;
+    padding: 10px;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+}
+#sidebar ul li a:hover {
+    color: #7386D5;
+    background: #fff;
+}
+
+#sidebar ul li.active > a, a[aria-expanded="true"] {
+    color: #fff;
+    background: #6d7fcc;
+}
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+.dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: -250px;
+    }
+    #sidebar.active {
+        margin-left: 0;
+    }
+}
+/* End Side Bar */
+
 /* start navigation */
 .header_area .main-menu .navbar-brand{
     padding: 0 2rem 0 5rem;
@@ -34,3 +111,104 @@
     background-clip: text;
 }
 /* end navigation */
+
+/* Banner Area */
+.site-main .site-banner .site-title h3{
+    padding-top:35%;
+    font-weight: 500;
+}
+
+.site-main .site-banner .site-title h3::after{
+    content: " ";
+    height: 2px;
+    width: 18vw;
+    background: black;
+    display: inline-block;
+    margin-left: 5%;
+    transform: translateY(-10px);
+}
+
+.site-main .site-banner .site-title h1{
+    font-size: 5rem;
+}
+
+.site-main .site-banner .site-title h4{
+    font-size: 1.5rem;
+}
+
+.site-main .site-banner .banner-image > img{
+    padding: 7rem 0;
+    width: 90rem;
+}
+
+
+/* End Banner Area*/
+
+/* Projects Area */ 
+
+.site-main .projects-area{
+    padding: 7rem 2rem;
+}
+
+.site-main .projects-area .projects-title h1{
+    font-size: 35px;
+}
+
+.site-main > .projects-area .project{
+    background: rgba(248, 252, 253, 0.973);
+    padding: 2rem 0;
+    width: 16rem;
+    margin: 5rem .5rem;
+    transition: box-shadow .7s ease;
+}
+
+.site-main > .projects-area .project:hover{
+    box-shadow: var(--box-shadow);
+}
+
+/* Project Detail Dialog */
+#white-background{
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: #fefefe;
+    opacity: 0.7;
+    z-index: 9999;
+}
+
+#dlgbox{
+    /* Initially dialog box is hidden */
+    display: none;
+    position: fixed;
+    width: 480px;
+    z-index: 9999;
+    border-radius: 10px;
+    background-color: #7c7d7e;  
+}
+
+#dlg-header{
+    background-color: #6d84b4;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px 10px 0px 10px;
+}
+
+#dlg-body{
+    background-color: white;
+    color: black;
+    font-size: 14px;
+    padding: 10px;
+    margin: 0px 10px 0px 10px;
+}
+
+#dlg-footer{
+    background-color: #f2f2f2;
+    text-align: right;
+    padding:10px;
+    margin: 0px 10px 10px 10px;
+}
+/* End Projects Area */ 
