@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <header>
+    </header>
+    <body>
+        <p>Input: An image containing five sets of differntly-sized solid black disks randomly scattered in the image.</p>
+        <p>Task: Design appropriate hit-or-miss transform to detect the smallest and largest disks.</p>
+        <p>Steps:</p>
+        <ul>
+            <li>Thresholded the input image to convert it into binary image</li>
+            <li>Removed noise by applying closing operation</li>
+            <li>Created structuring elements to detect small and large disks</li>
+            <li>Applied hit or miss transform using the structuring elements to get the final result</li>
+        </ul>
+    </body>
+</html>

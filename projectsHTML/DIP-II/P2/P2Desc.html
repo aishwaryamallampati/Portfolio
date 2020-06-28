@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <header>
+    </header>
+    <body>
+        <p><strong>Homotopic Skeletonization</strong></p>
+        <p>Task:Perfom thinning on an image to find its skeleton</p>
+        <p>Steps:</p>
+        <ul>
+            <li>Created eight structuring elements to remove boundaries of an image</li>
+            <li>To get the skeleton of an image, thinning operation has to be performed on the input image over multiple iterations</li>
+            <li>Hit or miss transform is performed using all the eight structuring elements in every    iteration</li>
+            <li>The resultant thinned image after every iteration is compared with the resultant
+                image in previous iteration, if both are same then the image cannot be thinned
+                any more so the algorithm is halted.</li>
+        </ul>
+        <p><strong>Shape Analysis</strong></p>
+        <p>Input: Image containing distinct objects and another image containing the same image but each object is rotated by certain angle.</p>
+        <p>Task: Perform shape analysis to find most similar objects.</p>
+        <p>Steps:</p>
+        <ul>
+            <li>Bounding box of each object is computed</li>
+            <li>Calculated size distribution, pecstrum and shape complexity of each object</li>
+            <li>Distances between objects in each image are compared to select the most similar object.</li>
+        </ul>
+    </body>
+</html>

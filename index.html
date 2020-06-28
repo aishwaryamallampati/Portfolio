@@ -148,7 +148,7 @@
                             </div>
                         </div>
                         <div class="modal-footer text-center">
-                            <a href="https://github.com/" target="_blank" id="source-code">
+                            <a target="_blank" id="source-code">
                                 <h3>Source Code</h3>
                             </a>
                         </div>
@@ -167,30 +167,33 @@
                         <div class="col-lg-3 col-md-6 col-sm-12">
                             <div class="card project">
                                 <div class="project-image">
-                                    <img src="./img/DIP-II/Project1.PNG" class="w3-border w3-padding" alt="DIP-II Project1">
+                                    <img src="./projectsHTML/DIP-II/P2/Project2.PNG" class="w3-border w3-padding" alt="DIP-II Project2">
                                 </div>
                                 <div class="project-title text-center">
-                                    <h5>Mathematical Morphotlogy:Hit-or-Miss Transform</h5>
+                                    <h5>Homotopic Skeletonization and Shape Analysis</h5>
                                 </div>
                                 <div class="project-details text-center">
-                                    <button class="text-uppercase" id="details" onclick="openDialog()">Details</button>
+                                    <button class="text-uppercase" onclick="openDialog('Homotopic Skeletonization and Shape Analysis','./projectsHTML/DIP-II/P2/P2Desc.html','./projectsHTML/DIP-II/P2/P2Img.html','https://github.com/aishwaryamallampati/PennState-MS/tree/master/DIP-II/Project2')">Details</button>
                                 </div>
                             </div>
                         </div>
                         
+                        
                         <div class="col-lg-3 col-md-6 col-sm-12">
                             <div class="card project">
                                 <div class="project-image">
-                                    <img src="./img/DIP-II/Project1.PNG" class="w3-border w3-padding" alt="DIP-II Project1">
+                                    <img src="./projectsHTML/DIP-II/P1/Project1.PNG" class="w3-border w3-padding" alt="DIP-II Project1">
                                 </div>
                                 <div class="project-title text-center">
                                     <h5>Mathematical Morphotlogy:Hit-or-Miss Transform</h5>
                                 </div>
                                 <div class="project-details text-center">
-                                    <button class="text-uppercase" onclick="openDialogTemp()">Details</button>
+                                    <button class="text-uppercase" id="details" onclick="openDialog('Mathematical Morphotlogy:Hit-or-Miss Transform','./projectsHTML/DIP-II/P1/P1Desc.html','./projectsHTML/DIP-II/P1/P1Img.html','https://github.com/aishwaryamallampati/PennState-MS/tree/master/DIP-II/Project1')">Details</button>
                                 </div>
                             </div>
                         </div>
+                        
+                        
                         
                         <div class="col-lg-3 col-md-6 col-sm-12">
                             <div class="card project">
@@ -288,7 +291,8 @@
             dlg.style.display = "none";
         }
         
-        function openDialogImg(projectHeader, projectDescription, projectMedia, projectLink){
+        
+        function openDialog(projectHeader, projectDescription, projectMedia, projectLink){
             // Access all the required elements
             var dlg = document.getElementById("dlg");
             var header = document.getElementById("dlg-header")
@@ -301,7 +305,7 @@
             header.innerHTML = projectHeader;
             description.src = projectDescription;
             media.src = projectMedia;
-            sourcode.href = dlgLink;
+            sourcecode.href = projectLink;
         }
         
     </script>
