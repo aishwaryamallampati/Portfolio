@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <header>
+    </header>
+    <body>
+        <p>Details of Transfer Function Generation for Direct Volume Rendering:</p>
+        <p>Goal: The main goal of this project is to formulate a method to generate transfer function for direct volume rendering that works at interactive speed.</p>
+        <p>Algorithm: The algorithm for transfer function generator is designed as a two-step process:</p>
+        <ul>
+            <li>The first step focuses on the computation of boundary characteristics of the input volume.</li>
+            <li>In this step, the algorithm finds the data values corresponding to the object.</li>
+            <li>In order to visualize different parts of the object, data values corresponding to the object are divided into multiple subsections using accumulative probability distribution of volume data.</li>
+            <li>In the second step, a threshold data value is computed in each subsection. </li>
+            <li>These threshold data values act as piecewise nodes of the opacity transfer function which is given to Direct Volume Rendering algorithm.</li>
+            <li>The user can set opacity to each threshold data value using sliders and visualize the changes in the rendered volume instantly.</li>
+        </ul>
+        <p>Technical Details:</p>
+        <ul>
+            <li>Programming Language: C++</li>
+            <li>Toolkits: ITK[Insight Toolkit] and VTK[Visualization Toolkit]</li>
+            <li>IDE: Visual Studio </li>
+        </ul>
+    </body>
+</html>
